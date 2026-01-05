@@ -1,0 +1,27 @@
+{
+  "name": "node-base",
+  "version": "1.0.0",
+  "description": "the base of a project in nodejs",
+  "license": "ISC",
+  "author": "guilhermep3",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "node --import=tsx --watch --env-file=.env ./src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
