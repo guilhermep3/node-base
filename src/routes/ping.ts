@@ -1,8 +1,8 @@
-import { Request, Router, type Response } from "express";
+import { Router, type Request, type Response } from "express";
 
 export const pingRoutes = Router();
 
-pingRoutes.get('/ping', (req, res) => {
+pingRoutes.get('/ping', (req: Request, res: Response) => {
   res.json({ pong: true });
 });
 
